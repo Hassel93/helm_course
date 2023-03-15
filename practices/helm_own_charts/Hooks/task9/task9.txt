@@ -1,0 +1,3 @@
+Use your helm chart from practice 7
+Add more ressources
+Add a pod that is started after post-install with the image busybox that will get html from our frontend write it to a file

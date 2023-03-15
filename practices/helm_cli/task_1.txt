@@ -1,0 +1,8 @@
+Setup your helm cli in your shell
+https://helm.sh/docs/intro/install/
+
+For Mac
+brew install helm
+
+For Windows
+choco install helm

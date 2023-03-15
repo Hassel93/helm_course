@@ -1,0 +1,6 @@
+Create a helm chart with a deployment and a service
+Use the image "timdaha/cn_meetup_demo_frontend:1.0.1" for the deployment and port 80 for the deployment
+Use the label app=meetup for your deployment and also for your service that you can map
+Create a service for this deployment
+Deploy the helm chart with the release name task2 and get access to the application
+Remove your release

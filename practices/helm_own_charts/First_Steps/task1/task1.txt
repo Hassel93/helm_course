@@ -1,0 +1,4 @@
+Create and deploy your first helm chart
+Use the helm cli and create a helm chart with the name nginx
+Create a Namespace own_chart_1 in your cluster.
+Deploy the template in the own_chart_1 namespace in in your cluster and get access to the pod

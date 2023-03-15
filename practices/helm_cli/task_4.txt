@@ -1,0 +1,4 @@
+Remove all your resources which was created from your helm releases.
+Also remove the wordpress repository that you use for the tasks.
+Use the helm doku to find the commands.
+Which commands do you use ? 

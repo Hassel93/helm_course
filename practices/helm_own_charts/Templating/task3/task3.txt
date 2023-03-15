@@ -1,0 +1,6 @@
+Copy your helm chart that you create in task 2
+and introduce a values variable with name replicaCount for the count of replicas
+and use it in your deployments 
+Install your helm chart again. Now with name task3 and set setting your replicaCount as a console value
+Ensure that you create now the number of pods that you will set with your replicaCount
+Remove your release

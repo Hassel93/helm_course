@@ -1,0 +1,3 @@
+Install the wordpress chart from bitnami with helm and get access to the admin ui.
+Make a helm list command and look at it.
+What are the commands that you need ?

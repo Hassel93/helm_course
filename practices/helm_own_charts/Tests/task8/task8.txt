@@ -1,0 +1,1 @@
+Copy your chart and write a test with using the image busbox and make a wget to our service
