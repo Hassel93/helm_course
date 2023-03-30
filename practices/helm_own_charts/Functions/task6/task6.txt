@@ -1,4 +1,0 @@
-Copy your helm chart from task 5 
-Make it possible to use upperCase for the value appName
-Upgrade your chart and set now appName=helmMeetup as a console option
-Remove your release

@@ -1,0 +1,51 @@
+Name:             nginx
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.4
+Start Time:       Wed, 15 Mar 2023 09:16:39 +0100
+Labels:           run=nginx
+Annotations:      <none>
+Status:           Running
+IP:               10.1.0.52
+IPs:
+  IP:  10.1.0.52
+Containers:
+  nginx:
+    Container ID:   docker://53c6bc06106234a6a03e4632630fe92326222448e55522679187e1410862cf93
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:aa0afebbb3cfa473099a62c4b32e9b3fb73ed23f2a75a65ce1d4b4f55a5c2ef2
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Wed, 15 Mar 2023 09:17:02 +0100
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-954pl (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-954pl:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  63s   default-scheduler  Successfully assigned default/nginx to docker-desktop
+  Normal  Pulling    62s   kubelet            Pulling image "nginx"
+  Normal  Pulled     40s   kubelet            Successfully pulled image "nginx" in 22.115265234s
+  Normal  Created    40s   kubelet            Created container nginx
+  Normal  Started    40s   kubelet            Started container nginx

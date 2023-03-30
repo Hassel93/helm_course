@@ -1,0 +1,11 @@
+Task6
+Update your Chart and use a if else
+If your .Values.replicaCount is 8 then set a label in your deployment that is named special=snowflake
+
+Task6b Challlenge
+Implement Fizzbuzz in helm
+
+If replicaCount is divisible by three set a label Fizzbuzz=Fizz and 
+is it divisible by five set a label Fizzbuzz=Buzz.
+
+If the replicaCount is divisible by three and five, then set a label Fizzbuzz=FizzBuzz

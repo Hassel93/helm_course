@@ -1,0 +1,9 @@
+4a. Challenge
+Write a helm chart which produce 2 deployment with the same code but different images and ports
+One Deployment use "timdaha/cn_meetup_demo_frontend:1.0.1" and port 80.
+The other one will use timdaha/solr:latest and port 8983 
+The solr deployment need also 2 Env-Variablen ADMINPW=password and BACKENDPW=password
+Use a With Flow to implement the env for the container
+Create everything in a helm chart and make pod forwarding to the solr and login to it
+with username admin-solr and the password that you set in the secret ADMINPW
+

@@ -1,0 +1,21 @@
+2a.
+For this task we build a helm chart for a webapp.
+The web app works on port 80 and the image that you should use is "timdaha/cn_meetup_demo_frontend:1.0.1"
+Use the label app=meetup as the selector for the service. 
+Create a folder with the name task2.
+Create the helm required files and folders in this folder. Do not use templating.
+The name of the chart should be task2
+Deploy the helm chart with the release name task2 and get access to the application through the service
+
+How would you start ?
+
+2b.
+Now use template variables to set the replica port for the deployment with using the values.yaml
+Deploy your new variant again. 
+Which command do you need without a uninstall ?
+Which commnand line option do you need because you update the values.yaml ?
+
+At least set your replicaCount Variable as a console value
+Ensure that you create now the number of pods that you will set with your replicaCount
+
+Do you need the same command line flag as before ? 

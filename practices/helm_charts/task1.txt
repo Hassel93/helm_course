@@ -1,0 +1,20 @@
+1a
+Create a folder with the name solutions
+Go to this folder and create your first helm chart with the cli
+The name of the helm chart should be task1
+Create a Namespace test in your cluster.
+Deploy the template in the test namespace in in your cluster and get access to the pod
+
+1b
+Which command can you use to see the relase yaml files ?
+
+1c
+Upgrade your release and set the container port to 1000 with the cli
+
+1d
+We now have 2 environments for this application and want to store configuration files for the values in values.yaml.
+Set the Image in the dev to timdaha/cn_meetup_demo_frontend:1.0.1
+In prod we need the default image but we will change the port to 1200
+
+What will you do ? Remember what the equivalent of a helm release is in programming
+

@@ -1,5 +1,0 @@
-Copy your helm chart that you create in task 3
-and use the Built-in Objects Release.Name for value of your label app everywhere
-Install your helm chart. Now with name task4
-Get Access to the pod. What is the name of the replica ?
-Remove your release

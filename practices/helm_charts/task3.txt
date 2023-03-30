@@ -1,0 +1,8 @@
+Copy your prevous developed helm chart for our web app.
+We will update it and make it more flexible
+and use the Built-in Objects Release.Name for value of your value meetup everywhere in your templates.
+The result should be that you are not manually set a connection between service and the deployment. 
+Everything should be set from helm.  
+Install your helm chart. Now with name task3
+Get Access to the pod. What is the name of the deployment ?
+Why it is good to work with helm values for something like the selector value ?

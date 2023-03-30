@@ -1,7 +1,0 @@
-Copy your helm chart that you create in task 4
-Now we will use functions. Introduce a new value in your values.yaml with the name appName and Value ""
-Use everywhere you use Built In Object Release.Name the new Value appName but only if it is set. 
-Install your chart with name task5 with default value.yaml 
-Upgrade your chart and set now appName=helmmeetup as a console option
-Rollback and look what is happening
-Remove your release

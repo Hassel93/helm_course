@@ -1,9 +1,0 @@
-Write a helm chart with 2 deployment which will have the same code but different images and ports
-One Deployment use "timdaha/cn_meetup_demo_frontend:1.0.1" and port 80 what you now.
-The other one will use timdaha/solr:latest and port 8983 
-The solr deployment need also secrets with ADMINPW=password and BACKENDPW=password
-Create everything in a helm chart and make pod forwarding to the solr and login to it
-with username admin-solr and the password that you set in the secret ADMINPW
-
-Divide it into two helm charts and create a umbrella chart that has both charts as dependecies
-

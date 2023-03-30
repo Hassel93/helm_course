@@ -1,0 +1,6 @@
+Update the files your helm chart that you create in task 5
+We will optimize it more and use more helm functioniality
+Now we will create a helpers.tpl file in your templates folder to use the functionality of {{ .Values.appName | default .Release.Name }} only in one file
+Create a object value named chart.appName and with the value of {{ .Values.appName | default .Release.Name }}
+Create a second object value named chart.appQualifiedName and with the value of {{ .Values.appName | default .Release.Name | lower }}
+Install your chart again and try it with the values appName=appTest

@@ -1,3 +1,5 @@
+Make the setup for your cluster
+
 Setup your helm cli in your shell
 https://helm.sh/docs/intro/install/
 

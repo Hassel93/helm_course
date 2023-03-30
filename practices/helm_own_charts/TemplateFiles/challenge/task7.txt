@@ -1,9 +1,0 @@
-Copy your helm chart that you create in task 6
-We will optimize it more and use more helm functioniality
-We changed our helperstpl and implement a fizzbuzz algorithm
-if replicaCount can be divided by 3 than the appName set to fizz
-if it can be divided by 5 than the appName set to buzz
-if it can be divided by 3 and 5 the appName set to fizzbuzz
-in all other cases the old value will be used {{ .Values.appName | default .Release.Name }}
-Install your chart again and try it with the values appName=appTest and replicaCount=3
-Remove your release

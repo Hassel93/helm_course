@@ -1,3 +1,4 @@
-Install the wordpress chart from bitnami with helm and get access to the admin ui.
-Make a helm list command and look at it.
-What are the commands that you need ?
+Create a namespace in your cluster with name test
+Install a the bitnami wordpress chart in your cluster
+Search on artifacthub.io for a chart
+Check the status of your Release and Save the output in a file

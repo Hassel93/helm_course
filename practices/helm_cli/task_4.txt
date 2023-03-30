@@ -1,4 +1,3 @@
-Remove all your resources which was created from your helm releases.
-Also remove the wordpress repository that you use for the tasks.
+Remove all your resources which are created from the helm release with one command.
 Use the helm doku to find the commands.
 Which commands do you use ? 
