@@ -1,0 +1,6 @@
+apiVersion: v2
+name: task2
+description: A minimal helm chart with no dependencies to other application
+type: application
+version: 0.1.2
+appVersion: "1.0.1"

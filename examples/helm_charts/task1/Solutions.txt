@@ -1,0 +1,6 @@
+helm template --debug or helm install or helm upgrade --dry-run --debug
+
+
+
+
+helm install relasename ./ --values prod_values,yaml

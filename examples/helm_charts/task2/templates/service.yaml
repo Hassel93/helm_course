@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: meetup-demo-2-frontend-svc
+  labels:
+    app: meetup
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: meetup

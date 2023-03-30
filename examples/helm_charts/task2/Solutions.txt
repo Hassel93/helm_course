@@ -1,0 +1,4 @@
+helm upgrade task2 ./ --reset-values
+
+helm upgrade task2 ./ --set replicaCount=6
+No if use the set command line flag we do not need reset values flag

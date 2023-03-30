@@ -1,0 +1,2 @@
+helm uninstall my-release -n test
+kubectl delete ns test

@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: ""
+
+podAnnotations: {}
+
+anders: {}
+
+service:
+  type: ClusterIP
+  port: 80
+
+
+

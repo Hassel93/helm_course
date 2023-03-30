@@ -1,0 +1,4 @@
+helm repo add bitnami https://charts.bitnami.com/bitnami 
+helm install my-release my-repo/wordpress -n test
+helm status my-release > status.txt
+

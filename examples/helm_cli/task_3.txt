@@ -1,0 +1,5 @@
+helm upgrade my-release my-repo/wordpress –version=«15.2.58»
+helm status my-release -> status_2.txt
+helm rollback my-release
+helm status my-release 
+Revision Number 3
