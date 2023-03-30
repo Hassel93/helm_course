@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.appName | default .Release.Name }}-frontend-svc
+  labels:
+    app: {{ .Values.appName | default .Release.Name }}
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ .Values.appName | default .Release.Name }}
