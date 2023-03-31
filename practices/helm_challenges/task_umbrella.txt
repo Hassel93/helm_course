@@ -1,1 +1,7 @@
 Write a umbrella chart
+Write a helm chart which produce 1 deployment
+One Deployment use "timdaha/cn_meetup_demo_frontend:1.0.1" and port 80.
+The second chart will use for a deployment timdaha/solr:latest and port 8983. 
+The solr deployment need also 2 Env-Variablen ADMINPW=password and BACKENDPW=password
+Include both charts in a umbrella chart that name is umbrella
+
