@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "chartname.appQualifiedName" . }}
+  labels:
+    app: {{ include "chartname.appName" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "chartname.appName" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "chartname.appName" . }}
+    spec:
+      containers:
+        - name: {{ include "chartname.appQualifiedName" . }}
+          image: "timdaha/cn_meetup_demo_frontend:1.0.1"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP

@@ -1,1 +1,2 @@
-Copy your chart from task 7 and write a test with using the image busbox and make a wget to our service
+Copy your chart from task 7 
+Write a helm test with using the image busbox and make a wget to our service

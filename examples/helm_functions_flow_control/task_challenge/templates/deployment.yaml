@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.appName | default .Release.Name }}
+  labels:
+    {{ if .Values.replicaCount | int | mod 3 | eq 0 -}}
+    Fizzbuzz: Fizz
+    {{ else if .Values.replicaCount | int | mod 5 | eq 0 -}}
+    Fizzbuzz: Buzz
+    {{ else if .Values.replicaCount | int | mod 15 | eq 0 -}}
+    Fizzbuzz: FizzBuzz
+    {{  end -}}
+    app: {{ .Values.appName | default .Release.Name }}
+spec:
+  replicas: {{ .Values.replicaCount | required "replicaCount must be set" }}
+  selector:
+    matchLabels:
+      app: {{ .Values.appName | default .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName | default .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Values.appName | default .Release.Name }}
+          image: "timdaha/cn_meetup_demo_frontend:1.0.1"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
